@@ -25,6 +25,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -185,10 +186,29 @@ def send_telegram(token, channel_id, text):
         "disable_web_page_preview": "true",
     }).encode("utf-8")
     req = urllib.request.Request(url, data=payload, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        # Telegram отвечает осмысленными кодами — переводим их в понятную причину,
+        # чтобы в логе Actions была строка «что чинить», а не сырой трейсбек.
+        body = ""
+        try:
+            body = e.read().decode("utf-8", "replace")[:300]
+        except Exception:
+            pass
+        why = {
+            404: "токен BOT_TOKEN недействителен (бот по нему не найден). "
+                 "Возьми свежий в @BotFather → /mybots → бот → API Token и обнови секрет.",
+            401: "токен BOT_TOKEN отозван или неверен. Обнови секрет свежим токеном из @BotFather.",
+            400: "Telegram отклонил запрос — обычно неверный CHANNEL_ID/хендл канала.",
+            403: "бот не имеет права публиковать: добавь его админом канала с правом "
+                 "«Публиковать сообщения».",
+        }.get(e.code, "неожиданный ответ Telegram.")
+        raise SystemExit("[tihie_dengi] ОШИБКА " + str(e.code) + ": " + why +
+                         ("\n[tihie_dengi] ответ API: " + body if body else ""))
     if not data.get("ok"):
-        raise RuntimeError(data)
+        raise SystemExit("[tihie_dengi] ОШИБКА: Telegram вернул ok=false — " + str(data))
     return data
 
 
