@@ -252,7 +252,9 @@ def main(argv=None):
         return 0
 
     token = os.environ.get("BOT_TOKEN", "").strip()
-    channel_id = os.environ.get("CHANNEL_ID", "").strip()
+    # CHANNEL_ID — не секрет: хендл публичный. Env перебивает, но по умолчанию
+    # берём из config.json, чтобы для запуска хватало одного секрета BOT_TOKEN.
+    channel_id = os.environ.get("CHANNEL_ID", "").strip() or str(cfg.get("channel_handle", "")).strip()
 
     mode = "dry"
     if args.simulate:
