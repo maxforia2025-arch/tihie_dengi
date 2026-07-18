@@ -16,6 +16,7 @@
     python3 promo.py --status        # очередь и на ком стоит счётчик
 """
 import argparse
+import datetime
 import json
 import os
 import sys
@@ -68,16 +69,23 @@ def candidates(promo, cfg):
     return out
 
 
-def read_counter():
+def iso_week():
+    """Год-неделя вида 2026-W29 — метка «на этой неделе уже рекламировали»."""
+    y, w, _ = datetime.date.today().isocalendar()
+    return "%d-W%02d" % (y, w)
+
+
+def read_state():
     data = post.load_json(PROMO_STATE_PATH, {"n": 0})
     try:
-        return int(data.get("n", 0))
+        n = int(data.get("n", 0))
     except (TypeError, ValueError):
-        return 0
+        n = 0
+    return n, str(data.get("week", ""))
 
 
-def write_counter(n):
-    post.save_json(PROMO_STATE_PATH, {"n": n})
+def write_state(n, week):
+    post.save_json(PROMO_STATE_PATH, {"n": n, "week": week})
 
 
 def pick(chans, n, token):
@@ -115,13 +123,15 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="воскресная кросс-реклама «Тихих денег»")
     ap.add_argument("--send", action="store_true", help="реально отправить")
     ap.add_argument("--status", action="store_true", help="показать очередь и выйти")
+    ap.add_argument("--force", action="store_true",
+                    help="опубликовать, даже если на этой неделе реклама уже была")
     args = ap.parse_args(argv)
 
     post.load_env()
     cfg = post.load_json(post.CONFIG_PATH, {})
     promo = load_promo()
     chans = candidates(promo, cfg)
-    n = read_counter()
+    n, last_week = read_state()
 
     if not chans:
         post.log("в сети нет каналов для рекламы — promo.json пуст или всё исключено.")
@@ -138,6 +148,15 @@ def main(argv=None):
     token = post.normalize_token(os.environ.get("BOT_TOKEN", "").strip(), cfg)
     channel_id = (os.environ.get("CHANNEL_ID", "").strip() or
                   str(cfg.get("channel_handle", "")).strip())
+
+    # Правило «одна реклама в неделю» держится на метке недели, а не на счётчике:
+    # счётчик сдвинется и при ручном перезапуске, а метка не даст выйти второй
+    # рекламе в то же воскресенье. Проверяем до сети — она тут не нужна.
+    week = iso_week()
+    if args.send and last_week == week and not args.force:
+        post.log("на неделе " + week + " реклама уже выходила — пропускаю "
+                 "(--force, если нужно всё равно).")
+        return 0
 
     ch, v, used = pick(chans, n, token if args.send else "")
     if ch is None:
@@ -171,7 +190,7 @@ def main(argv=None):
             pass
     else:
         post.send_telegram(token, channel_id, text)
-    write_counter(used + 1)
+    write_state(used + 1, week)
     post.log("опубликована реклама " + ch["handle"] + "; следующий на очереди — " +
              chans[(used + 1) % len(chans)]["handle"])
     return 0
