@@ -177,6 +177,30 @@ def format_post(post, cfg):
 
 # ── Telegram ─────────────────────────────────────────────────────────────────
 
+def normalize_token(token, cfg):
+    """Достраивает токен, если скопирована только его вторая половина.
+
+    Токен = «<id бота>:<секрет>». При выделении мышью в Telegram начало до
+    двоеточия часто теряется — Telegram на такую строку отвечает 404, и человек
+    копирует заново с тем же результатом. id бота публичный и лежит в config.json,
+    поэтому недостающую часть подставляем сами: секрет от этого не страдает,
+    а грабли исчезают. Лишние обёртки («bot», пробелы, кусок URL) тоже срезаем.
+    """
+    if not token:
+        return token
+    for junk in ("https://api.telegram.org/bot", "http://api.telegram.org/bot"):
+        if token.startswith(junk):
+            token = token[len(junk):]
+    token = token.strip().strip('"').strip("'").rstrip("/")
+    if token.startswith("bot") and ":" in token[3:]:
+        token = token[3:]
+    bot_id = str(cfg.get("bot_id", "") or "")
+    if ":" not in token and bot_id and len(token) >= 30:
+        log("BOT_TOKEN без префикса — подставляю id бота " + bot_id + " из config.json.")
+        token = bot_id + ":" + token
+    return token
+
+
 def diagnose_token(token, cfg):
     """Проверяет ФОРМУ токена до обращения к сети и печатает разбор.
 
@@ -306,7 +330,7 @@ def main(argv=None):
             print("  [" + flag + "] " + str(p.get("id")) + " — " + str(p.get("title", ""))[:60])
         return 0
 
-    token = os.environ.get("BOT_TOKEN", "").strip()
+    token = normalize_token(os.environ.get("BOT_TOKEN", "").strip(), cfg)
     if args.send:
         diagnose_token(token, cfg)
     # CHANNEL_ID — не секрет: хендл публичный. Env перебивает, но по умолчанию
