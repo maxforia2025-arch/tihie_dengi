@@ -1,0 +1,48 @@
+name: tihie_dengi-refill
+
+# Автопополнение банка постов через Claude API — раз в сутки.
+# Генерирует новые посты, только если непоказанных осталось меньше 20.
+on:
+  schedule:
+    - cron: "0 2 * * *"    # 05:00 МСК ежедневно
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Сколько постов сгенерировать принудительно"
+        default: "15"
+        type: string
+
+permissions:
+  contents: write          # коммитим обновлённый posts.json
+
+concurrency:
+  group: tihie_dengi-refill
+  cancel-in-progress: false
+
+jobs:
+  refill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refill bank
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 generate_posts.py --send --count "${{ github.event.inputs.count }}"
+          else
+            python3 generate_posts.py --send --ensure 20
+          fi
+
+      - name: Commit new posts
+        run: |
+          git config user.name  "tihie_dengi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add posts.json
+          git diff --staged --quiet || git commit -m "bank: авто-пополнение [skip ci]"
+          git push

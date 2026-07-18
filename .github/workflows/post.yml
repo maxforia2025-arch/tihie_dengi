@@ -1,0 +1,49 @@
+name: tihie_dengi-post
+
+# Автопостинг канала «Тихие деньги» в облаке GitHub Actions.
+# Работает при выключенном Mac. Время в cron — UTC (МСК = UTC+3).
+# Расписание МСК: 08:00 / 14:00 / 21:00
+on:
+  schedule:
+    - cron: "0 5 * * *"    # 08:00 МСК
+    - cron: "0 11 * * *"    # 14:00 МСК
+    - cron: "0 18 * * *"    # 21:00 МСК
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Сколько постов опубликовать сейчас"
+        default: "1"
+        type: string
+
+permissions:
+  contents: write          # коммитим state.json обратно — это и есть анти-дубль
+
+concurrency:
+  group: tihie_dengi-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Post
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          FUNNEL_BOT_USERNAME: ${{ secrets.FUNNEL_BOT_USERNAME }}
+          N: ${{ github.event.inputs.count || '1' }}
+        run: python3 post.py --send
+
+      - name: Commit state (anti-duplicate)
+        run: |
+          git config user.name  "tihie_dengi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "state: update [skip ci]"
+          git push
