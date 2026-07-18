@@ -236,6 +236,30 @@ def diagnose_token(token, cfg):
         log("  ✓ форма токена правильная и id совпадает с ботом канала.")
 
 
+def check_token(token):
+    """getMe: проверяет токен, ничего не публикуя.
+
+    Нужен после смены токена — иначе единственный способ убедиться, что он живой,
+    это выпустить в канал лишний пост.
+    """
+    if not token:
+        log("ОШИБКА: BOT_TOKEN не задан.")
+        return 2
+    try:
+        req = urllib.request.Request("https://api.telegram.org/bot" + token + "/getMe",
+                                     headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        log("ОШИБКА " + str(e.code) + ": токен не принят Telegram. Возьми свежий "
+            "в @BotFather → /mybots → бот → API Token и обнови секрет BOT_TOKEN.")
+        return 1
+    me = data.get("result", {})
+    log("✓ токен рабочий: бот @" + str(me.get("username", "?")) +
+        " (id " + str(me.get("id", "?")) + "). Публикация не выполнялась.")
+    return 0
+
+
 def send_telegram(token, channel_id, text):
     url = "https://api.telegram.org/bot" + token + "/sendMessage"
     payload = urllib.parse.urlencode({
@@ -309,6 +333,8 @@ def main(argv=None):
                     help="без сети, но записать состояние (проверка анти-дубля)")
     ap.add_argument("--count", type=int, default=None, help="сколько постов за запуск")
     ap.add_argument("--status", action="store_true", help="показать состояние банка и выйти")
+    ap.add_argument("--check", action="store_true",
+                    help="проверить BOT_TOKEN через getMe и выйти (ничего не публикует)")
     args = ap.parse_args(argv)
 
     load_env()
@@ -331,8 +357,10 @@ def main(argv=None):
         return 0
 
     token = normalize_token(os.environ.get("BOT_TOKEN", "").strip(), cfg)
-    if args.send:
+    if args.send or args.check:
         diagnose_token(token, cfg)
+    if args.check:
+        return check_token(token)
     # CHANNEL_ID — не секрет: хендл публичный. Env перебивает, но по умолчанию
     # берём из config.json, чтобы для запуска хватало одного секрета BOT_TOKEN.
     channel_id = os.environ.get("CHANNEL_ID", "").strip() or str(cfg.get("channel_handle", "")).strip()

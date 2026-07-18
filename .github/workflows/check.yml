@@ -1,0 +1,22 @@
+name: tihie_dengi-check
+
+# Проверка секрета BOT_TOKEN без публикации: дёргает getMe и печатает,
+# каким ботом он оказался. Нужен после смены токена, чтобы не выяснять
+# его работоспособность ценой лишнего поста в канале.
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check token
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python3 post.py --check
