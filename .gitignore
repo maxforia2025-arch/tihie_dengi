@@ -4,3 +4,6 @@ __pycache__/
 secret.json
 .DS_Store
 *.tmp
+
+# превью карточек, генерятся локально
+preview_*.png

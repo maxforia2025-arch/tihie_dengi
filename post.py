@@ -260,15 +260,16 @@ def check_token(token):
     return 0
 
 
-def send_telegram(token, channel_id, text):
-    url = "https://api.telegram.org/bot" + token + "/sendMessage"
-    payload = urllib.parse.urlencode({
-        "chat_id": channel_id,
-        "text": text,
-        "parse_mode": "HTML",
-        "disable_web_page_preview": "true",
-    }).encode("utf-8")
-    req = urllib.request.Request(url, data=payload, headers={"User-Agent": UA})
+CAPTION_LIMIT = 1024      # жёсткий лимит Telegram на подпись к фото
+
+
+def _api_call(token, method, payload, content_type=None):
+    """Вызов Bot API с человекочитаемым разбором ошибок вместо трейсбека."""
+    url = "https://api.telegram.org/bot" + token + "/" + method
+    headers = {"User-Agent": UA}
+    if content_type:
+        headers["Content-Type"] = content_type
+    req = urllib.request.Request(url, data=payload, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read().decode("utf-8"))
@@ -295,6 +296,43 @@ def send_telegram(token, channel_id, text):
     return data
 
 
+def send_telegram(token, channel_id, text):
+    return _api_call(token, "sendMessage", urllib.parse.urlencode({
+        "chat_id": channel_id,
+        "text": text,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": "true",
+    }).encode("utf-8"))
+
+
+def _multipart(fields, file_field, file_path):
+    """multipart/form-data вручную: заливка файла без внешних библиотек."""
+    boundary = "----tdg" + str(int(time.time() * 1000))
+    out = b""
+    for key, val in fields.items():
+        out += ("--" + boundary + "\r\nContent-Disposition: form-data; name=\"" + key +
+                "\"\r\n\r\n" + str(val) + "\r\n").encode("utf-8")
+    with open(file_path, "rb") as fh:
+        blob = fh.read()
+    out += ("--" + boundary + "\r\nContent-Disposition: form-data; name=\"" + file_field +
+            "\"; filename=\"card.png\"\r\nContent-Type: image/png\r\n\r\n").encode("utf-8")
+    out += blob + ("\r\n--" + boundary + "--\r\n").encode("utf-8")
+    return out, "multipart/form-data; boundary=" + boundary
+
+
+def send_photo(token, channel_id, photo_path, caption):
+    """Фото с подписью. Длинный текст Telegram в подпись не пустит (лимит 1024),
+    поэтому такой пост уходит двумя сообщениями: картинка и следом текст."""
+    if len(caption) <= CAPTION_LIMIT:
+        body, ctype = _multipart({"chat_id": channel_id, "caption": caption,
+                                  "parse_mode": "HTML"}, "photo", photo_path)
+        return _api_call(token, "sendPhoto", body, ctype)
+    log("подпись длиннее " + str(CAPTION_LIMIT) + " символов — шлю фото и текст отдельно.")
+    body, ctype = _multipart({"chat_id": channel_id}, "photo", photo_path)
+    _api_call(token, "sendPhoto", body, ctype)
+    return send_telegram(token, channel_id, caption)
+
+
 # ── проход ───────────────────────────────────────────────────────────────────
 
 def run_once(posts, state, cfg, mode, token, channel_id):
@@ -307,7 +345,23 @@ def run_once(posts, state, cfg, mode, token, channel_id):
     text = format_post(post, cfg)
 
     if mode == "send":
-        send_telegram(token, channel_id, text)
+        # Каждый пост идёт с карточкой сверху. Если рендерить нечем (нет
+        # rsvg-convert/cairosvg), пост всё равно уходит — текстом, а не молчанием.
+        card = None
+        try:
+            import cards
+            card = cards.make_card(post)
+        except Exception as e:
+            log("карточку собрать не удалось (" + str(e) + ") — публикую текстом.")
+        if card:
+            send_photo(token, channel_id, card, text)
+            try:
+                os.unlink(card)
+            except OSError:
+                pass
+        else:
+            log("рендер картинок недоступен — публикую текстом.")
+            send_telegram(token, channel_id, text)
         log("опубликовано: " + str(post.get("id")) + " [" + str(post.get("cat", "-")) + "]")
     else:
         print("\n" + "=" * 56)

@@ -157,7 +157,20 @@ def main(argv=None):
     if not token:
         post.log("ОШИБКА: --send требует BOT_TOKEN.")
         return 2
-    post.send_telegram(token, channel_id, text)
+    card = None
+    try:
+        import cards
+        card = cards.make_promo_card(ch.get("name", ""), v.get("title", ""))
+    except Exception as e:
+        post.log("карточку собрать не удалось (" + str(e) + ") — публикую текстом.")
+    if card:
+        post.send_photo(token, channel_id, card, text)
+        try:
+            os.unlink(card)
+        except OSError:
+            pass
+    else:
+        post.send_telegram(token, channel_id, text)
     write_counter(used + 1)
     post.log("опубликована реклама " + ch["handle"] + "; следующий на очереди — " +
              chans[(used + 1) % len(chans)]["handle"])

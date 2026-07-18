@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Renderer for cards
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin fonts-dejavu-core fonts-liberation
+
       - name: Post
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
