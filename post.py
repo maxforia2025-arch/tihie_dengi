@@ -189,8 +189,12 @@ def diagnose_token(token, cfg):
         return
     expected = str(cfg.get("bot_id", "") or "")
     head, sep, tail = token.partition(":")
+    # В лог не попадает НИ ОДНОГО символа секретной части: только длины и
+    # числовой id бота (он публичный). Логи Actions в открытом репозитории
+    # читает кто угодно, а маскировка GitHub ловит лишь точное совпадение
+    # со всем секретом — подстроку она не скроет.
     log("проверка BOT_TOKEN: длина " + str(len(token)) +
-        ", префикс " + (head if head.isdigit() else repr(head[:12])) +
+        ", id бота " + (head if head.isdigit() else "<не число>") +
         ", хвост " + str(len(tail)) + " симв.")
     if not sep:
         log("  ✗ в токене нет двоеточия. Похоже, скопирована не та строка — "
