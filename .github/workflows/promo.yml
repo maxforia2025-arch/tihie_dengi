@@ -1,0 +1,40 @@
+name: tihie_dengi-promo
+
+# Воскресная кросс-реклама соседних каналов Maxforia Group.
+# Один канал = одно воскресенье, по кругу. Время в cron — UTC (МСК = UTC+3).
+# 09:00 UTC = 12:00 МСК — между дневными постами, чтобы не слипалось с ними.
+on:
+  schedule:
+    - cron: "0 9 * * 0"     # каждое воскресенье, 12:00 МСК
+  workflow_dispatch:
+
+permissions:
+  contents: write           # коммитим promo_state.json — он держит очередь ротации
+
+concurrency:
+  group: tihie_dengi-promo
+  cancel-in-progress: false
+
+jobs:
+  promo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Promo
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        run: python3 promo.py --send
+
+      - name: Commit promo state
+        run: |
+          git config user.name  "tihie_dengi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add promo_state.json
+          git diff --staged --quiet || git commit -m "promo: следующий канал в ротации [skip ci]"
+          git push
