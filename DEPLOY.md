@@ -17,9 +17,11 @@
    git push -u origin main
    ```
 4. **Секреты.** В репо → **Settings → Secrets and variables → Actions → New repository secret**:
-   - `BOT_TOKEN` — токен из шага 2
-   - `CHANNEL_ID` — `@tihie_dengi_daily` (твой хендл) **или** числовой `-100…`
-   - `ANTHROPIC_API_KEY` — ключ Anthropic (для автопополнения банка)
+   - `BOT_TOKEN` — токен из шага 2 **(единственный обязательный)**
+   - `ANTHROPIC_API_KEY` — ключ Anthropic (нужен только автопополнению банка;
+     без него канал постит из готовых 15 постов ≈ 5 дней)
+   - `CHANNEL_ID` — *не нужен*: берётся из `config.json` (`@tihie_dengi`).
+     Задавай секретом, только если постишь в приватный канал по числовому `-100…`
    - `FUNNEL_BOT_USERNAME` — *(необязательно)* username общего `funnel_bot` без `@`,
      чтобы в постах появлялась ссылка на лид-магнит с меткой `src=tdg`
 5. **Проверка.** Вкладка **Actions → tihie_dengi-post → Run workflow** (`count=1`).
