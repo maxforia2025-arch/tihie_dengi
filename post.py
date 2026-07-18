@@ -177,6 +177,37 @@ def format_post(post, cfg):
 
 # ── Telegram ─────────────────────────────────────────────────────────────────
 
+def diagnose_token(token, cfg):
+    """Проверяет ФОРМУ токена до обращения к сети и печатает разбор.
+
+    Секрет не раскрывается: в лог идут только длина, числовой префикс (id бота —
+    он публичный, есть в config.json) и факт совпадения с ожидаемым ботом.
+    Нужно потому, что Telegram на любую кривую строку отвечает одинаковым 404,
+    а причины разные: чужой бот, лишние символы, обрезанная копипаста.
+    """
+    if not token:
+        return
+    expected = str(cfg.get("bot_id", "") or "")
+    head, sep, tail = token.partition(":")
+    log("проверка BOT_TOKEN: длина " + str(len(token)) +
+        ", префикс " + (head if head.isdigit() else repr(head[:12])) +
+        ", хвост " + str(len(tail)) + " симв.")
+    if not sep:
+        log("  ✗ в токене нет двоеточия. Похоже, скопирована не та строка — "
+            "нужен вид 123456789:AA... целиком.")
+    elif not head.isdigit():
+        log("  ✗ до двоеточия должен быть только номер бота. Убери лишнее "
+            "(«bot», кавычки, часть URL, пробелы).")
+    elif expected and head != expected:
+        log("  ✗ это токен ДРУГОГО бота: id " + head + ", а канал ждёт " + expected +
+            " (@" + str(cfg.get("bot_username", "")).lstrip("@") + "). "
+            "В @BotFather → /mybots выбери именно его.")
+    elif len(tail) < 30:
+        log("  ✗ хвост токена короче обычного — копипаста, похоже, обрезана.")
+    else:
+        log("  ✓ форма токена правильная и id совпадает с ботом канала.")
+
+
 def send_telegram(token, channel_id, text):
     url = "https://api.telegram.org/bot" + token + "/sendMessage"
     payload = urllib.parse.urlencode({
@@ -272,6 +303,8 @@ def main(argv=None):
         return 0
 
     token = os.environ.get("BOT_TOKEN", "").strip()
+    if args.send:
+        diagnose_token(token, cfg)
     # CHANNEL_ID — не секрет: хендл публичный. Env перебивает, но по умолчанию
     # берём из config.json, чтобы для запуска хватало одного секрета BOT_TOKEN.
     channel_id = os.environ.get("CHANNEL_ID", "").strip() or str(cfg.get("channel_handle", "")).strip()
