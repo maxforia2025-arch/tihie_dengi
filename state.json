@@ -12,8 +12,9 @@
   "privychka_04",
   "slozhnyj_procent_vremya",
   "vklad_procenty_nalog",
-  "inflyaciya_est_dengi"
+  "inflyaciya_est_dengi",
+  "summa_ot_dohoda"
  ],
- "last_post_id": "inflyaciya_est_dengi",
- "last_run": "2026-07-21T07:29:05Z"
+ "last_post_id": "summa_ot_dohoda",
+ "last_run": "2026-07-21T12:20:15Z"
 }
