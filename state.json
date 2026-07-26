@@ -26,8 +26,9 @@
   "raschet_15",
   "vklad_do_vostrebovaniya",
   "privychka_08",
-  "srednyaya_zarplata_lozh"
+  "srednyaya_zarplata_lozh",
+  "strahovanie_vkladov_limit"
  ],
- "last_post_id": "srednyaya_zarplata_lozh",
- "last_run": "2026-07-25T19:06:17Z"
+ "last_post_id": "strahovanie_vkladov_limit",
+ "last_run": "2026-07-26T07:32:40Z"
 }
