@@ -28,8 +28,9 @@
   "privychka_08",
   "srednyaya_zarplata_lozh",
   "strahovanie_vkladov_limit",
-  "stavka_po_kreditu_polnaya"
+  "stavka_po_kreditu_polnaya",
+  "cena_vremeni_pokupka"
  ],
- "last_post_id": "stavka_po_kreditu_polnaya",
- "last_run": "2026-07-26T11:55:45Z"
+ "last_post_id": "cena_vremeni_pokupka",
+ "last_run": "2026-07-26T19:09:25Z"
 }
