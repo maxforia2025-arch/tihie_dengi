@@ -30,8 +30,9 @@
   "strahovanie_vkladov_limit",
   "stavka_po_kreditu_polnaya",
   "cena_vremeni_pokupka",
-  "raznica_stavok_bankov"
+  "raznica_stavok_bankov",
+  "dorogaya_veshch_delenie"
  ],
- "last_post_id": "raznica_stavok_bankov",
- "last_run": "2026-07-27T08:24:43Z"
+ "last_post_id": "dorogaya_veshch_delenie",
+ "last_run": "2026-07-27T13:33:02Z"
 }
