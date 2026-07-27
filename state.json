@@ -29,8 +29,9 @@
   "srednyaya_zarplata_lozh",
   "strahovanie_vkladov_limit",
   "stavka_po_kreditu_polnaya",
-  "cena_vremeni_pokupka"
+  "cena_vremeni_pokupka",
+  "raznica_stavok_bankov"
  ],
- "last_post_id": "cena_vremeni_pokupka",
- "last_run": "2026-07-26T19:09:25Z"
+ "last_post_id": "raznica_stavok_bankov",
+ "last_run": "2026-07-27T08:24:43Z"
 }
