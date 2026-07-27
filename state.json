@@ -31,8 +31,9 @@
   "stavka_po_kreditu_polnaya",
   "cena_vremeni_pokupka",
   "raznica_stavok_bankov",
-  "dorogaya_veshch_delenie"
+  "dorogaya_veshch_delenie",
+  "antimif_10"
  ],
- "last_post_id": "dorogaya_veshch_delenie",
- "last_run": "2026-07-27T13:33:02Z"
+ "last_post_id": "antimif_10",
+ "last_run": "2026-07-27T19:26:33Z"
 }
