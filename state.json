@@ -33,8 +33,9 @@
   "raznica_stavok_bankov",
   "dorogaya_veshch_delenie",
   "antimif_10",
-  "rasprodazha_sozdana_dlya_traty"
+  "rasprodazha_sozdana_dlya_traty",
+  "nalogovyj_vychet"
  ],
- "last_post_id": "rasprodazha_sozdana_dlya_traty",
- "last_run": "2026-07-28T07:34:38Z"
+ "last_post_id": "nalogovyj_vychet",
+ "last_run": "2026-07-28T12:51:00Z"
 }
