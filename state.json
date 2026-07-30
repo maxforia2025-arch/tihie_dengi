@@ -39,8 +39,9 @@
   "scheta_v_odnom_banke",
   "perevod_v_den_zarplaty",
   "realnaya_dohodnost",
-  "nalog_vychet_za_lechenie"
+  "nalog_vychet_za_lechenie",
+  "effektivnaya_stavka"
  ],
- "last_post_id": "nalog_vychet_za_lechenie",
- "last_run": "2026-07-30T07:30:55Z"
+ "last_post_id": "effektivnaya_stavka",
+ "last_run": "2026-07-30T12:24:06Z"
 }
