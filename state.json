@@ -42,8 +42,9 @@
   "nalog_vychet_za_lechenie",
   "effektivnaya_stavka",
   "okruglenie_dohoda_vniz",
-  "dva_dohoda_v_seme"
+  "dva_dohoda_v_seme",
+  "tri_zarplaty_pered_uvolneniem"
  ],
- "last_post_id": "dva_dohoda_v_seme",
- "last_run": "2026-07-31T07:46:21Z"
+ "last_post_id": "tri_zarplaty_pered_uvolneniem",
+ "last_run": "2026-07-31T19:23:18Z"
 }
