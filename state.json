@@ -50,8 +50,9 @@
   "melkie_traty_summa",
   "besplatnyj_syr",
   "k_ne_skidka",
-  "nalog_vychet_iis"
+  "nalog_vychet_iis",
+  "emergency_pered_investiciyami"
  ],
- "last_post_id": "nalog_vychet_iis",
- "last_run": "2026-08-03T08:23:24Z"
+ "last_post_id": "emergency_pered_investiciyami",
+ "last_run": "2026-08-03T13:33:42Z"
 }
