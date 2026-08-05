@@ -56,8 +56,9 @@
   "antimif_kredit_uluchshaet",
   "dogovor_melkij_shrift",
   "okruglenie_stavki_realnaya",
-  "minimalnyy_platezh_lovushka"
+  "minimalnyy_platezh_lovushka",
+  "privychka_avans_v_konvert"
  ],
- "last_post_id": "minimalnyy_platezh_lovushka",
- "last_run": "2026-08-05T07:34:42Z"
+ "last_post_id": "privychka_avans_v_konvert",
+ "last_run": "2026-08-05T12:48:12Z"
 }
