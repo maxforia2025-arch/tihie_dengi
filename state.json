@@ -55,8 +55,9 @@
   "otdelnyy_schet_nalogi",
   "antimif_kredit_uluchshaet",
   "dogovor_melkij_shrift",
-  "okruglenie_stavki_realnaya"
+  "okruglenie_stavki_realnaya",
+  "minimalnyy_platezh_lovushka"
  ],
- "last_post_id": "okruglenie_stavki_realnaya",
- "last_run": "2026-08-04T19:36:28Z"
+ "last_post_id": "minimalnyy_platezh_lovushka",
+ "last_run": "2026-08-05T07:34:42Z"
 }
