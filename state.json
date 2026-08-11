@@ -75,8 +75,9 @@
   "kredit_dochrochno_pereschet",
   "antimif_bank_luchshe",
   "stavka_nominal_realnaya",
-  "antimif_arenda_vybroshennye"
+  "antimif_arenda_vybroshennye",
+  "antimif_dohod_investicii"
  ],
- "last_post_id": "antimif_arenda_vybroshennye",
- "last_run": "2026-08-11T11:37:17Z"
+ "last_post_id": "antimif_dohod_investicii",
+ "last_run": "2026-08-11T19:01:10Z"
 }
