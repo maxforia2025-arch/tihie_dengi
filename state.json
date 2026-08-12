@@ -76,8 +76,9 @@
   "antimif_bank_luchshe",
   "stavka_nominal_realnaya",
   "antimif_arenda_vybroshennye",
-  "antimif_dohod_investicii"
+  "antimif_dohod_investicii",
+  "privychka_pauza_krupnoe"
  ],
- "last_post_id": "antimif_dohod_investicii",
- "last_run": "2026-08-11T19:01:10Z"
+ "last_post_id": "privychka_pauza_krupnoe",
+ "last_run": "2026-08-12T06:08:11Z"
 }
