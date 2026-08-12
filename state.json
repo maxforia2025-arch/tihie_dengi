@@ -77,8 +77,9 @@
   "stavka_nominal_realnaya",
   "antimif_arenda_vybroshennye",
   "antimif_dohod_investicii",
-  "privychka_pauza_krupnoe"
+  "privychka_pauza_krupnoe",
+  "minimalka_karta_dolg"
  ],
- "last_post_id": "privychka_pauza_krupnoe",
- "last_run": "2026-08-12T06:08:11Z"
+ "last_post_id": "minimalka_karta_dolg",
+ "last_run": "2026-08-12T11:39:41Z"
 }
