@@ -79,8 +79,9 @@
   "antimif_dohod_investicii",
   "privychka_pauza_krupnoe",
   "minimalka_karta_dolg",
-  "antimif_vklad_slozhno"
+  "antimif_vklad_slozhno",
+  "mehanika_dosrochnoe_pogashenie"
  ],
- "last_post_id": "antimif_vklad_slozhno",
- "last_run": "2026-08-12T19:00:44Z"
+ "last_post_id": "mehanika_dosrochnoe_pogashenie",
+ "last_run": "2026-08-13T06:11:36Z"
 }
