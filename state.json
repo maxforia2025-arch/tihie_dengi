@@ -85,8 +85,9 @@
   "privychka_sverka",
   "vklad_prolongaciya",
   "mehanika_lestnica_vkladov",
-  "raschet_zapas_kritich"
+  "raschet_zapas_kritich",
+  "raschet_nalog_prodazha"
  ],
- "last_post_id": "raschet_zapas_kritich",
- "last_run": "2026-08-14T18:52:57Z"
+ "last_post_id": "raschet_nalog_prodazha",
+ "last_run": "2026-08-15T05:18:29Z"
 }
