@@ -86,8 +86,9 @@
   "vklad_prolongaciya",
   "mehanika_lestnica_vkladov",
   "raschet_zapas_kritich",
-  "raschet_nalog_prodazha"
+  "raschet_nalog_prodazha",
+  "privychka_pauza_pered_dostavkoy"
  ],
- "last_post_id": "raschet_nalog_prodazha",
- "last_run": "2026-08-15T05:18:29Z"
+ "last_post_id": "privychka_pauza_pered_dostavkoy",
+ "last_run": "2026-08-15T11:11:57Z"
 }
