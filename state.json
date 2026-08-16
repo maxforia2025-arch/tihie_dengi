@@ -89,8 +89,9 @@
   "raschet_nalog_prodazha",
   "privychka_pauza_pered_dostavkoy",
   "chto_takoe_defolt_inflyatsii",
-  "nalog_vklad_neoblagaemyi"
+  "nalog_vklad_neoblagaemyi",
+  "privychka_svery_bankomat"
  ],
- "last_post_id": "nalog_vklad_neoblagaemyi",
- "last_run": "2026-08-16T05:21:46Z"
+ "last_post_id": "privychka_svery_bankomat",
+ "last_run": "2026-08-16T11:12:07Z"
 }
