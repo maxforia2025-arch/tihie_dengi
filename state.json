@@ -88,8 +88,9 @@
   "raschet_zapas_kritich",
   "raschet_nalog_prodazha",
   "privychka_pauza_pered_dostavkoy",
-  "chto_takoe_defolt_inflyatsii"
+  "chto_takoe_defolt_inflyatsii",
+  "nalog_vklad_neoblagaemyi"
  ],
- "last_post_id": "chto_takoe_defolt_inflyatsii",
- "last_run": "2026-08-15T18:27:41Z"
+ "last_post_id": "nalog_vklad_neoblagaemyi",
+ "last_run": "2026-08-16T05:21:46Z"
 }
