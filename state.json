@@ -95,8 +95,9 @@
   "rezerv_na_remont",
   "mehanika_zarplata_nalog",
   "nalog_vychet_iis_2",
-  "okrugli_platezh_vverh"
+  "okrugli_platezh_vverh",
+  "mehanika_bkm_besplatno"
  ],
- "last_post_id": "okrugli_platezh_vverh",
- "last_run": "2026-08-18T05:22:04Z"
+ "last_post_id": "mehanika_bkm_besplatno",
+ "last_run": "2026-08-18T11:17:02Z"
 }
