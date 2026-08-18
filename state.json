@@ -94,8 +94,9 @@
   "sravni_stavki_raz_v_god",
   "rezerv_na_remont",
   "mehanika_zarplata_nalog",
-  "nalog_vychet_iis_2"
+  "nalog_vychet_iis_2",
+  "okrugli_platezh_vverh"
  ],
- "last_post_id": "nalog_vychet_iis_2",
- "last_run": "2026-08-17T18:37:51Z"
+ "last_post_id": "okrugli_platezh_vverh",
+ "last_run": "2026-08-18T05:22:04Z"
 }
