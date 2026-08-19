@@ -99,8 +99,9 @@
   "mehanika_bkm_besplatno",
   "tri_zarplaty_orientir",
   "cena_dostavki_krupnogo",
-  "nalichka_ne_ostavlyaet_sled"
+  "nalichka_ne_ostavlyaet_sled",
+  "mehanika_perevod_v_den_zp"
  ],
- "last_post_id": "nalichka_ne_ostavlyaet_sled",
- "last_run": "2026-08-19T11:17:01Z"
+ "last_post_id": "mehanika_perevod_v_den_zp",
+ "last_run": "2026-08-19T18:34:11Z"
 }
