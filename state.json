@@ -98,8 +98,9 @@
   "okrugli_platezh_vverh",
   "mehanika_bkm_besplatno",
   "tri_zarplaty_orientir",
-  "cena_dostavki_krupnogo"
+  "cena_dostavki_krupnogo",
+  "nalichka_ne_ostavlyaet_sled"
  ],
- "last_post_id": "cena_dostavki_krupnogo",
- "last_run": "2026-08-19T05:22:49Z"
+ "last_post_id": "nalichka_ne_ostavlyaet_sled",
+ "last_run": "2026-08-19T11:17:01Z"
 }
