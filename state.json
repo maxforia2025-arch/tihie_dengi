@@ -97,8 +97,9 @@
   "nalog_vychet_iis_2",
   "okrugli_platezh_vverh",
   "mehanika_bkm_besplatno",
-  "tri_zarplaty_orientir"
+  "tri_zarplaty_orientir",
+  "cena_dostavki_krupnogo"
  ],
- "last_post_id": "tri_zarplaty_orientir",
- "last_run": "2026-08-18T18:36:35Z"
+ "last_post_id": "cena_dostavki_krupnogo",
+ "last_run": "2026-08-19T05:22:49Z"
 }
