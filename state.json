@@ -101,8 +101,9 @@
   "cena_dostavki_krupnogo",
   "nalichka_ne_ostavlyaet_sled",
   "mehanika_perevod_v_den_zp",
-  "nalog_vichet_ne_srazu"
+  "nalog_vichet_ne_srazu",
+  "mehanika_vklad_popolnyaemyj"
  ],
- "last_post_id": "nalog_vichet_ne_srazu",
- "last_run": "2026-08-20T05:24:16Z"
+ "last_post_id": "mehanika_vklad_popolnyaemyj",
+ "last_run": "2026-08-20T11:19:00Z"
 }
