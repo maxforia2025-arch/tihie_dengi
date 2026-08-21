@@ -103,8 +103,9 @@
   "mehanika_perevod_v_den_zp",
   "nalog_vichet_ne_srazu",
   "mehanika_vklad_popolnyaemyj",
-  "skidka_do_prazdnika"
+  "skidka_do_prazdnika",
+  "kredit_naznachenie_summy"
  ],
- "last_post_id": "skidka_do_prazdnika",
- "last_run": "2026-08-20T18:37:41Z"
+ "last_post_id": "kredit_naznachenie_summy",
+ "last_run": "2026-08-21T05:25:43Z"
 }
