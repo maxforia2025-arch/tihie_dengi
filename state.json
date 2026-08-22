@@ -107,8 +107,9 @@
   "kredit_naznachenie_summy",
   "raschet_procent_ot_dohoda",
   "antimif_bolshaya_zarplata",
-  "mehanika_nalog_deti"
+  "mehanika_nalog_deti",
+  "privychka_summa_pered_snom"
  ],
- "last_post_id": "mehanika_nalog_deti",
- "last_run": "2026-08-22T05:20:15Z"
+ "last_post_id": "privychka_summa_pered_snom",
+ "last_run": "2026-08-22T11:13:07Z"
 }
