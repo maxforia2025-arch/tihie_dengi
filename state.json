@@ -106,8 +106,9 @@
   "skidka_do_prazdnika",
   "kredit_naznachenie_summy",
   "raschet_procent_ot_dohoda",
-  "antimif_bolshaya_zarplata"
+  "antimif_bolshaya_zarplata",
+  "mehanika_nalog_deti"
  ],
- "last_post_id": "antimif_bolshaya_zarplata",
- "last_run": "2026-08-21T18:35:00Z"
+ "last_post_id": "mehanika_nalog_deti",
+ "last_run": "2026-08-22T05:20:15Z"
 }
