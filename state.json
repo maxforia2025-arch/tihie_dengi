@@ -111,8 +111,9 @@
   "privychka_summa_pered_snom",
   "vklad_prodlenie_stavka",
   "cel_data_summa",
-  "cel_bez_summy"
+  "cel_bez_summy",
+  "zarplata_ne_ravno_dohod"
  ],
- "last_post_id": "cel_bez_summy",
- "last_run": "2026-08-23T11:12:53Z"
+ "last_post_id": "zarplata_ne_ravno_dohod",
+ "last_run": "2026-08-23T18:28:18Z"
 }
