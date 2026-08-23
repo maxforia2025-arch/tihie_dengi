@@ -109,8 +109,9 @@
   "antimif_bolshaya_zarplata",
   "mehanika_nalog_deti",
   "privychka_summa_pered_snom",
-  "vklad_prodlenie_stavka"
+  "vklad_prodlenie_stavka",
+  "cel_data_summa"
  ],
- "last_post_id": "vklad_prodlenie_stavka",
- "last_run": "2026-08-22T18:29:01Z"
+ "last_post_id": "cel_data_summa",
+ "last_run": "2026-08-23T05:22:45Z"
 }
