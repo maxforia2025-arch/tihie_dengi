@@ -114,8 +114,9 @@
   "cel_bez_summy",
   "zarplata_ne_ravno_dohod",
   "raschet_remont_v_cene",
-  "vklad_procenty_grafik"
+  "vklad_procenty_grafik",
+  "antimif_dorogoe_kachestvennoe"
  ],
- "last_post_id": "vklad_procenty_grafik",
- "last_run": "2026-08-24T11:18:46Z"
+ "last_post_id": "antimif_dorogoe_kachestvennoe",
+ "last_run": "2026-08-24T18:38:52Z"
 }
