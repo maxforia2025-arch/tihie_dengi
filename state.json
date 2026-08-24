@@ -113,8 +113,9 @@
   "cel_data_summa",
   "cel_bez_summy",
   "zarplata_ne_ravno_dohod",
-  "raschet_remont_v_cene"
+  "raschet_remont_v_cene",
+  "vklad_procenty_grafik"
  ],
- "last_post_id": "raschet_remont_v_cene",
- "last_run": "2026-08-24T05:32:18Z"
+ "last_post_id": "vklad_procenty_grafik",
+ "last_run": "2026-08-24T11:18:46Z"
 }
