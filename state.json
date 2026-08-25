@@ -115,8 +115,9 @@
   "zarplata_ne_ravno_dohod",
   "raschet_remont_v_cene",
   "vklad_procenty_grafik",
-  "antimif_dorogoe_kachestvennoe"
+  "antimif_dorogoe_kachestvennoe",
+  "privychka_sverka_raz_v_mesyac"
  ],
- "last_post_id": "antimif_dorogoe_kachestvennoe",
- "last_run": "2026-08-24T18:38:52Z"
+ "last_post_id": "privychka_sverka_raz_v_mesyac",
+ "last_run": "2026-08-25T05:25:14Z"
 }
