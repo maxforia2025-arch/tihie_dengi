@@ -124,8 +124,9 @@
   "mehanika_fond_rezerv",
   "privychka_sverka_podpisok",
   "nalog_deti_vozvrat",
-  "platit_za_uvedomleniya"
+  "platit_za_uvedomleniya",
+  "ostatok_v_konce_dnya"
  ],
- "last_post_id": "platit_za_uvedomleniya",
- "last_run": "2026-08-28T02:02:46Z"
+ "last_post_id": "ostatok_v_konce_dnya",
+ "last_run": "2026-08-28T17:06:02Z"
 }
