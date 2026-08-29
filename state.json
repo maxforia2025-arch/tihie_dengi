@@ -126,8 +126,9 @@
   "nalog_deti_vozvrat",
   "platit_za_uvedomleniya",
   "ostatok_v_konce_dnya",
-  "vtoroe_reshenie_utrom"
+  "vtoroe_reshenie_utrom",
+  "mehanika_okruglenie"
  ],
- "last_post_id": "vtoroe_reshenie_utrom",
- "last_run": "2026-08-28T21:17:13Z"
+ "last_post_id": "mehanika_okruglenie",
+ "last_run": "2026-08-29T01:29:02Z"
 }
