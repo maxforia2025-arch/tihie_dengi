@@ -128,8 +128,9 @@
   "ostatok_v_konce_dnya",
   "vtoroe_reshenie_utrom",
   "mehanika_okruglenie",
-  "nds_vklad_dolgosrok"
+  "nds_vklad_dolgosrok",
+  "raschet_realnaya_stavka"
  ],
- "last_post_id": "nds_vklad_dolgosrok",
- "last_run": "2026-08-29T11:26:15Z"
+ "last_post_id": "raschet_realnaya_stavka",
+ "last_run": "2026-08-29T15:23:10Z"
 }
