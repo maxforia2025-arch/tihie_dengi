@@ -129,8 +129,9 @@
   "vtoroe_reshenie_utrom",
   "mehanika_okruglenie",
   "nds_vklad_dolgosrok",
-  "raschet_realnaya_stavka"
+  "raschet_realnaya_stavka",
+  "raschet_perepoluchka"
  ],
- "last_post_id": "raschet_realnaya_stavka",
- "last_run": "2026-08-29T15:23:10Z"
+ "last_post_id": "raschet_perepoluchka",
+ "last_run": "2026-08-29T20:28:23Z"
 }
