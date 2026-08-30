@@ -132,8 +132,9 @@
   "raschet_realnaya_stavka",
   "raschet_perepoluchka",
   "antimif_akcia_uspej",
-  "protsent_na_ostatok_ne_avtomat"
+  "protsent_na_ostatok_ne_avtomat",
+  "kredit_dosrochno_uvedomlenie"
  ],
- "last_post_id": "protsent_na_ostatok_ne_avtomat",
- "last_run": "2026-08-30T15:07:09Z"
+ "last_post_id": "kredit_dosrochno_uvedomlenie",
+ "last_run": "2026-08-30T20:37:43Z"
 }
