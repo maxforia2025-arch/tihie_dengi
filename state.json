@@ -130,8 +130,9 @@
   "mehanika_okruglenie",
   "nds_vklad_dolgosrok",
   "raschet_realnaya_stavka",
-  "raschet_perepoluchka"
+  "raschet_perepoluchka",
+  "antimif_akcia_uspej"
  ],
- "last_post_id": "raschet_perepoluchka",
- "last_run": "2026-08-29T20:28:23Z"
+ "last_post_id": "antimif_akcia_uspej",
+ "last_run": "2026-08-30T10:12:49Z"
 }
