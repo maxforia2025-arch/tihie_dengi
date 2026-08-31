@@ -135,8 +135,9 @@
   "protsent_na_ostatok_ne_avtomat",
   "kredit_dosrochno_uvedomlenie",
   "raschet_dostavka_kredit",
-  "privychka_pauza_pered_rasprodazhei"
+  "privychka_pauza_pered_rasprodazhei",
+  "vklad_na_rebenka"
  ],
- "last_post_id": "privychka_pauza_pered_rasprodazhei",
- "last_run": "2026-08-31T17:46:23Z"
+ "last_post_id": "vklad_na_rebenka",
+ "last_run": "2026-08-31T22:30:59Z"
 }
