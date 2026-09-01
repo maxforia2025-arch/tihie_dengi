@@ -138,8 +138,9 @@
   "privychka_pauza_pered_rasprodazhei",
   "vklad_na_rebenka",
   "mif_investicii_slozhno",
-  "raschet_podpiski_god"
+  "raschet_podpiski_god",
+  "raschet_komissiya_perevod"
  ],
- "last_post_id": "raschet_podpiski_god",
- "last_run": "2026-09-01T15:19:36Z"
+ "last_post_id": "raschet_komissiya_perevod",
+ "last_run": "2026-09-01T20:37:03Z"
 }
