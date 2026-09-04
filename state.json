@@ -147,8 +147,9 @@
   "mehanika_schet_dlya_naloga",
   "privychka_pauza_pered_pokupkoy",
   "antimif_kredit_normalno",
-  "vklad_procenty_v_konce_sroka"
+  "vklad_procenty_v_konce_sroka",
+  "privychka_sverit_podpiski"
  ],
- "last_post_id": "vklad_procenty_v_konce_sroka",
- "last_run": "2026-09-04T14:38:02Z"
+ "last_post_id": "privychka_sverit_podpiski",
+ "last_run": "2026-09-04T20:19:46Z"
 }
