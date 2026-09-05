@@ -148,8 +148,9 @@
   "privychka_pauza_pered_pokupkoy",
   "antimif_kredit_normalno",
   "vklad_procenty_v_konce_sroka",
-  "privychka_sverit_podpiski"
+  "privychka_sverit_podpiski",
+  "mehanika_vklad_procent_na_ostatok"
  ],
- "last_post_id": "privychka_sverit_podpiski",
- "last_run": "2026-09-04T20:19:46Z"
+ "last_post_id": "mehanika_vklad_procent_na_ostatok",
+ "last_run": "2026-09-05T08:44:30Z"
 }
