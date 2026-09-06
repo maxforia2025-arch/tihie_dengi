@@ -152,8 +152,9 @@
   "mehanika_vklad_procent_na_ostatok",
   "mehanika_zarplata_dva_scheta",
   "raspiska_pri_zaeme_drugu",
-  "prosrochka_kartina"
+  "prosrochka_kartina",
+  "raschet_ceny_podpisok_god"
  ],
- "last_post_id": "prosrochka_kartina",
- "last_run": "2026-09-06T09:05:50Z"
+ "last_post_id": "raschet_ceny_podpisok_god",
+ "last_run": "2026-09-06T13:51:07Z"
 }
