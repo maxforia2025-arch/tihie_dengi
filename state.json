@@ -153,8 +153,9 @@
   "mehanika_zarplata_dva_scheta",
   "raspiska_pri_zaeme_drugu",
   "prosrochka_kartina",
-  "raschet_ceny_podpisok_god"
+  "raschet_ceny_podpisok_god",
+  "nalog_s_prodazhi_ve_onlain"
  ],
- "last_post_id": "raschet_ceny_podpisok_god",
- "last_run": "2026-09-06T13:51:07Z"
+ "last_post_id": "nalog_s_prodazhi_ve_onlain",
+ "last_run": "2026-09-06T20:02:14Z"
 }
