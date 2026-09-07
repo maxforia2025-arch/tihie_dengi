@@ -155,8 +155,9 @@
   "prosrochka_kartina",
   "raschet_ceny_podpisok_god",
   "nalog_s_prodazhi_ve_onlain",
-  "nakopitelnyi_vs_vklad_gibkost"
+  "nakopitelnyi_vs_vklad_gibkost",
+  "nalog_prodazha_mashiny"
  ],
- "last_post_id": "nakopitelnyi_vs_vklad_gibkost",
- "last_run": "2026-09-07T09:52:41Z"
+ "last_post_id": "nalog_prodazha_mashiny",
+ "last_run": "2026-09-07T16:18:04Z"
 }
