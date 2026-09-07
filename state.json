@@ -156,8 +156,9 @@
   "raschet_ceny_podpisok_god",
   "nalog_s_prodazhi_ve_onlain",
   "nakopitelnyi_vs_vklad_gibkost",
-  "nalog_prodazha_mashiny"
+  "nalog_prodazha_mashiny",
+  "antimif_dohod_passiv"
  ],
- "last_post_id": "nalog_prodazha_mashiny",
- "last_run": "2026-09-07T16:18:04Z"
+ "last_post_id": "antimif_dohod_passiv",
+ "last_run": "2026-09-07T21:09:36Z"
 }
