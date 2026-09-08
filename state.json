@@ -157,8 +157,9 @@
   "nalog_s_prodazhi_ve_onlain",
   "nakopitelnyi_vs_vklad_gibkost",
   "nalog_prodazha_mashiny",
-  "antimif_dohod_passiv"
+  "antimif_dohod_passiv",
+  "antimif_bank_sovetnik"
  ],
- "last_post_id": "antimif_dohod_passiv",
- "last_run": "2026-09-07T21:09:36Z"
+ "last_post_id": "antimif_bank_sovetnik",
+ "last_run": "2026-09-08T09:17:25Z"
 }
