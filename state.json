@@ -159,8 +159,9 @@
   "nalog_prodazha_mashiny",
   "antimif_dohod_passiv",
   "antimif_bank_sovetnik",
-  "privychka_spisok_pered"
+  "privychka_spisok_pered",
+  "vklad_popolnenie_ne_menyaet_stavku"
  ],
- "last_post_id": "privychka_spisok_pered",
- "last_run": "2026-09-08T14:49:44Z"
+ "last_post_id": "vklad_popolnenie_ne_menyaet_stavku",
+ "last_run": "2026-09-08T20:45:55Z"
 }
