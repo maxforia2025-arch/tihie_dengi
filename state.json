@@ -158,8 +158,9 @@
   "nakopitelnyi_vs_vklad_gibkost",
   "nalog_prodazha_mashiny",
   "antimif_dohod_passiv",
-  "antimif_bank_sovetnik"
+  "antimif_bank_sovetnik",
+  "privychka_spisok_pered"
  ],
- "last_post_id": "antimif_bank_sovetnik",
- "last_run": "2026-09-08T09:17:25Z"
+ "last_post_id": "privychka_spisok_pered",
+ "last_run": "2026-09-08T14:49:44Z"
 }
