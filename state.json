@@ -160,8 +160,9 @@
   "antimif_dohod_passiv",
   "antimif_bank_sovetnik",
   "privychka_spisok_pered",
-  "vklad_popolnenie_ne_menyaet_stavku"
+  "vklad_popolnenie_ne_menyaet_stavku",
+  "raschet_pravilo_72"
  ],
- "last_post_id": "vklad_popolnenie_ne_menyaet_stavku",
- "last_run": "2026-09-08T20:45:55Z"
+ "last_post_id": "raschet_pravilo_72",
+ "last_run": "2026-09-09T09:20:09Z"
 }
