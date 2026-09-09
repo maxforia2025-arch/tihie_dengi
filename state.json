@@ -162,8 +162,9 @@
   "privychka_spisok_pered",
   "vklad_popolnenie_ne_menyaet_stavku",
   "raschet_pravilo_72",
-  "snyat_na_bez_srochnosti"
+  "snyat_na_bez_srochnosti",
+  "mehanika_nakop_scheta_avto"
  ],
- "last_post_id": "snyat_na_bez_srochnosti",
- "last_run": "2026-09-09T14:55:31Z"
+ "last_post_id": "mehanika_nakop_scheta_avto",
+ "last_run": "2026-09-09T20:29:25Z"
 }
