@@ -183,8 +183,9 @@
   "antimif_06",
   "kredit_odobrili_ne_znachit",
   "mehanika_09",
-  "avtoplatezh_nakoplenie"
+  "avtoplatezh_nakoplenie",
+  "strahovka_k_kreditu"
  ],
- "last_post_id": "avtoplatezh_nakoplenie",
- "last_run": "2026-09-16T15:12:57Z"
+ "last_post_id": "strahovka_k_kreditu",
+ "last_run": "2026-09-16T20:54:50Z"
 }
