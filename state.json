@@ -184,8 +184,9 @@
   "kredit_odobrili_ne_znachit",
   "mehanika_09",
   "avtoplatezh_nakoplenie",
-  "strahovka_k_kreditu"
+  "strahovka_k_kreditu",
+  "kapitalizatsiya_protsentov"
  ],
- "last_post_id": "strahovka_k_kreditu",
- "last_run": "2026-09-16T20:54:50Z"
+ "last_post_id": "kapitalizatsiya_protsentov",
+ "last_run": "2026-09-17T09:45:45Z"
 }
