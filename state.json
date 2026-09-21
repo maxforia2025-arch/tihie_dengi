@@ -197,8 +197,9 @@
   "cena_vremeni_pokupka",
   "raznica_stavok_bankov",
   "dorogaya_veshch_delenie",
-  "antimif_10"
+  "antimif_10",
+  "rasprodazha_sozdana_dlya_traty"
  ],
- "last_post_id": "antimif_10",
- "last_run": "2026-09-21T10:20:28Z"
+ "last_post_id": "rasprodazha_sozdana_dlya_traty",
+ "last_run": "2026-09-21T16:42:41Z"
 }
