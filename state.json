@@ -202,8 +202,9 @@
   "nalogovyj_vychet",
   "kredit_karta_snyat_nalichnye",
   "scheta_v_odnom_banke",
-  "perevod_v_den_zarplaty"
+  "perevod_v_den_zarplaty",
+  "realnaya_dohodnost"
  ],
- "last_post_id": "perevod_v_den_zarplaty",
- "last_run": "2026-09-22T20:55:54Z"
+ "last_post_id": "realnaya_dohodnost",
+ "last_run": "2026-09-23T09:40:23Z"
 }
