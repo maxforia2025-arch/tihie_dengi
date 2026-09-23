@@ -203,8 +203,9 @@
   "kredit_karta_snyat_nalichnye",
   "scheta_v_odnom_banke",
   "perevod_v_den_zarplaty",
-  "realnaya_dohodnost"
+  "realnaya_dohodnost",
+  "nalog_vychet_za_lechenie"
  ],
- "last_post_id": "realnaya_dohodnost",
- "last_run": "2026-09-23T09:40:23Z"
+ "last_post_id": "nalog_vychet_za_lechenie",
+ "last_run": "2026-09-23T15:14:15Z"
 }
