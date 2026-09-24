@@ -205,8 +205,9 @@
   "perevod_v_den_zarplaty",
   "realnaya_dohodnost",
   "nalog_vychet_za_lechenie",
-  "effektivnaya_stavka"
+  "effektivnaya_stavka",
+  "okruglenie_dohoda_vniz"
  ],
- "last_post_id": "effektivnaya_stavka",
- "last_run": "2026-09-23T21:08:15Z"
+ "last_post_id": "okruglenie_dohoda_vniz",
+ "last_run": "2026-09-24T09:39:39Z"
 }
