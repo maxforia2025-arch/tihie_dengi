@@ -208,8 +208,9 @@
   "effektivnaya_stavka",
   "okruglenie_dohoda_vniz",
   "dva_dohoda_v_seme",
-  "tri_zarplaty_pered_uvolneniem"
+  "tri_zarplaty_pered_uvolneniem",
+  "raschet_komissiya_obmena"
  ],
- "last_post_id": "tri_zarplaty_pered_uvolneniem",
- "last_run": "2026-09-24T21:11:13Z"
+ "last_post_id": "raschet_komissiya_obmena",
+ "last_run": "2026-09-25T09:57:09Z"
 }
