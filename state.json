@@ -210,8 +210,9 @@
   "dva_dohoda_v_seme",
   "tri_zarplaty_pered_uvolneniem",
   "raschet_komissiya_obmena",
-  "privychka_dat_zarplaty"
+  "privychka_dat_zarplaty",
+  "komissiya_szhiraet"
  ],
- "last_post_id": "privychka_dat_zarplaty",
- "last_run": "2026-09-25T15:41:11Z"
+ "last_post_id": "komissiya_szhiraet",
+ "last_run": "2026-09-25T21:08:08Z"
 }
