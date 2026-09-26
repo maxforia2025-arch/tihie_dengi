@@ -211,8 +211,9 @@
   "tri_zarplaty_pered_uvolneniem",
   "raschet_komissiya_obmena",
   "privychka_dat_zarplaty",
-  "komissiya_szhiraet"
+  "komissiya_szhiraet",
+  "melkie_traty_summa"
  ],
- "last_post_id": "komissiya_szhiraet",
- "last_run": "2026-09-25T21:08:08Z"
+ "last_post_id": "melkie_traty_summa",
+ "last_run": "2026-09-26T09:39:18Z"
 }
