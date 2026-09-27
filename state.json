@@ -216,8 +216,9 @@
   "besplatnyj_syr",
   "k_ne_skidka",
   "nalog_vychet_iis",
-  "emergency_pered_investiciyami"
+  "emergency_pered_investiciyami",
+  "otdelnyy_schet_nalogi"
  ],
- "last_post_id": "emergency_pered_investiciyami",
- "last_run": "2026-09-27T15:27:53Z"
+ "last_post_id": "otdelnyy_schet_nalogi",
+ "last_run": "2026-09-27T20:56:31Z"
 }
