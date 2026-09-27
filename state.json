@@ -214,8 +214,9 @@
   "komissiya_szhiraet",
   "melkie_traty_summa",
   "besplatnyj_syr",
-  "k_ne_skidka"
+  "k_ne_skidka",
+  "nalog_vychet_iis"
  ],
- "last_post_id": "k_ne_skidka",
- "last_run": "2026-09-26T20:41:17Z"
+ "last_post_id": "nalog_vychet_iis",
+ "last_run": "2026-09-27T10:19:02Z"
 }
