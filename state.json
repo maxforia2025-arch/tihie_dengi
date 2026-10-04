@@ -236,8 +236,9 @@
   "dva_zarabotka_odna_trata",
   "inflyaciya_est_dengi_3",
   "cel_summy_imya",
-  "privychka_pered_pokupkoy"
+  "privychka_pered_pokupkoy",
+  "kredit_dochrochno_pereschet"
  ],
- "last_post_id": "privychka_pered_pokupkoy",
- "last_run": "2026-10-04T10:50:07Z"
+ "last_post_id": "kredit_dochrochno_pereschet",
+ "last_run": "2026-10-04T15:34:28Z"
 }
