@@ -235,8 +235,9 @@
   "dva_scheta_zarplata",
   "dva_zarabotka_odna_trata",
   "inflyaciya_est_dengi_3",
-  "cel_summy_imya"
+  "cel_summy_imya",
+  "privychka_pered_pokupkoy"
  ],
- "last_post_id": "cel_summy_imya",
- "last_run": "2026-10-03T20:38:12Z"
+ "last_post_id": "privychka_pered_pokupkoy",
+ "last_run": "2026-10-04T10:50:07Z"
 }
