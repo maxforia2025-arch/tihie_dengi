@@ -239,8 +239,9 @@
   "privychka_pered_pokupkoy",
   "kredit_dochrochno_pereschet",
   "antimif_bank_luchshe",
-  "stavka_nominal_realnaya"
+  "stavka_nominal_realnaya",
+  "antimif_arenda_vybroshennye"
  ],
- "last_post_id": "stavka_nominal_realnaya",
- "last_run": "2026-10-05T11:58:35Z"
+ "last_post_id": "antimif_arenda_vybroshennye",
+ "last_run": "2026-10-05T19:37:19Z"
 }
