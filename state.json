@@ -238,8 +238,9 @@
   "cel_summy_imya",
   "privychka_pered_pokupkoy",
   "kredit_dochrochno_pereschet",
-  "antimif_bank_luchshe"
+  "antimif_bank_luchshe",
+  "stavka_nominal_realnaya"
  ],
- "last_post_id": "antimif_bank_luchshe",
- "last_run": "2026-10-04T20:54:31Z"
+ "last_post_id": "stavka_nominal_realnaya",
+ "last_run": "2026-10-05T11:58:35Z"
 }
