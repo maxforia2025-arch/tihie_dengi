@@ -246,8 +246,9 @@
   "minimalka_karta_dolg",
   "antimif_vklad_slozhno",
   "mehanika_dosrochnoe_pogashenie",
-  "raschet_stoimost_vladenia"
+  "raschet_stoimost_vladenia",
+  "privychka_sverka"
  ],
- "last_post_id": "raschet_stoimost_vladenia",
- "last_run": "2026-10-07T17:36:39Z"
+ "last_post_id": "privychka_sverka",
+ "last_run": "2026-10-07T22:46:46Z"
 }
