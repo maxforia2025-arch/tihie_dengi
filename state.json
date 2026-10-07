@@ -245,8 +245,9 @@
   "privychka_pauza_krupnoe",
   "minimalka_karta_dolg",
   "antimif_vklad_slozhno",
-  "mehanika_dosrochnoe_pogashenie"
+  "mehanika_dosrochnoe_pogashenie",
+  "raschet_stoimost_vladenia"
  ],
- "last_post_id": "mehanika_dosrochnoe_pogashenie",
- "last_run": "2026-10-07T11:27:40Z"
+ "last_post_id": "raschet_stoimost_vladenia",
+ "last_run": "2026-10-07T17:36:39Z"
 }
