@@ -248,8 +248,9 @@
   "mehanika_dosrochnoe_pogashenie",
   "raschet_stoimost_vladenia",
   "privychka_sverka",
-  "vklad_prolongaciya"
+  "vklad_prolongaciya",
+  "mehanika_lestnica_vkladov"
  ],
- "last_post_id": "vklad_prolongaciya",
- "last_run": "2026-10-08T11:43:04Z"
+ "last_post_id": "mehanika_lestnica_vkladov",
+ "last_run": "2026-10-08T17:39:39Z"
 }
