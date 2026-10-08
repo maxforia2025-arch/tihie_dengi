@@ -247,8 +247,9 @@
   "antimif_vklad_slozhno",
   "mehanika_dosrochnoe_pogashenie",
   "raschet_stoimost_vladenia",
-  "privychka_sverka"
+  "privychka_sverka",
+  "vklad_prolongaciya"
  ],
- "last_post_id": "privychka_sverka",
- "last_run": "2026-10-07T22:46:46Z"
+ "last_post_id": "vklad_prolongaciya",
+ "last_run": "2026-10-08T11:43:04Z"
 }
