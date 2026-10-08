@@ -249,8 +249,9 @@
   "raschet_stoimost_vladenia",
   "privychka_sverka",
   "vklad_prolongaciya",
-  "mehanika_lestnica_vkladov"
+  "mehanika_lestnica_vkladov",
+  "raschet_zapas_kritich"
  ],
- "last_post_id": "mehanika_lestnica_vkladov",
- "last_run": "2026-10-08T17:39:39Z"
+ "last_post_id": "raschet_zapas_kritich",
+ "last_run": "2026-10-08T22:57:51Z"
 }
