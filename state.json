@@ -252,8 +252,9 @@
   "mehanika_lestnica_vkladov",
   "raschet_zapas_kritich",
   "raschet_nalog_prodazha",
-  "privychka_pauza_pered_dostavkoy"
+  "privychka_pauza_pered_dostavkoy",
+  "chto_takoe_defolt_inflyatsii"
  ],
- "last_post_id": "privychka_pauza_pered_dostavkoy",
- "last_run": "2026-10-09T17:15:28Z"
+ "last_post_id": "chto_takoe_defolt_inflyatsii",
+ "last_run": "2026-10-09T22:19:05Z"
 }
