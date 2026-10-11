@@ -256,8 +256,9 @@
   "chto_takoe_defolt_inflyatsii",
   "nalog_vklad_neoblagaemyi",
   "privychka_svery_bankomat",
-  "sravni_stavki_raz_v_god"
+  "sravni_stavki_raz_v_god",
+  "rezerv_na_remont"
  ],
- "last_post_id": "sravni_stavki_raz_v_god",
- "last_run": "2026-10-10T21:12:51Z"
+ "last_post_id": "rezerv_na_remont",
+ "last_run": "2026-10-11T11:08:39Z"
 }
