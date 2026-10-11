@@ -257,8 +257,9 @@
   "nalog_vklad_neoblagaemyi",
   "privychka_svery_bankomat",
   "sravni_stavki_raz_v_god",
-  "rezerv_na_remont"
+  "rezerv_na_remont",
+  "mehanika_zarplata_nalog"
  ],
- "last_post_id": "rezerv_na_remont",
- "last_run": "2026-10-11T11:08:39Z"
+ "last_post_id": "mehanika_zarplata_nalog",
+ "last_run": "2026-10-11T16:27:49Z"
 }
