@@ -261,8 +261,9 @@
   "mehanika_zarplata_nalog",
   "nalog_vychet_iis_2",
   "okrugli_platezh_vverh",
-  "mehanika_bkm_besplatno"
+  "mehanika_bkm_besplatno",
+  "tri_zarplaty_orientir"
  ],
- "last_post_id": "mehanika_bkm_besplatno",
- "last_run": "2026-10-12T20:03:24Z"
+ "last_post_id": "tri_zarplaty_orientir",
+ "last_run": "2026-10-13T00:11:45Z"
 }
