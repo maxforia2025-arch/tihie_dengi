@@ -270,8 +270,9 @@
   "mehanika_vklad_popolnyaemyj",
   "skidka_do_prazdnika",
   "kredit_naznachenie_summy",
-  "raschet_procent_ot_dohoda"
+  "raschet_procent_ot_dohoda",
+  "antimif_bolshaya_zarplata"
  ],
- "last_post_id": "raschet_procent_ot_dohoda",
- "last_run": "2026-10-15T15:25:02Z"
+ "last_post_id": "antimif_bolshaya_zarplata",
+ "last_run": "2026-10-15T20:58:23Z"
 }
