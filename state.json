@@ -269,8 +269,9 @@
   "nalog_vichet_ne_srazu",
   "mehanika_vklad_popolnyaemyj",
   "skidka_do_prazdnika",
-  "kredit_naznachenie_summy"
+  "kredit_naznachenie_summy",
+  "raschet_procent_ot_dohoda"
  ],
- "last_post_id": "kredit_naznachenie_summy",
- "last_run": "2026-10-15T09:33:17Z"
+ "last_post_id": "raschet_procent_ot_dohoda",
+ "last_run": "2026-10-15T15:25:02Z"
 }
