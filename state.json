@@ -273,8 +273,9 @@
   "raschet_procent_ot_dohoda",
   "antimif_bolshaya_zarplata",
   "mehanika_nalog_deti",
-  "privychka_summa_pered_snom"
+  "privychka_summa_pered_snom",
+  "vklad_prodlenie_stavka"
  ],
- "last_post_id": "privychka_summa_pered_snom",
- "last_run": "2026-10-16T15:04:30Z"
+ "last_post_id": "vklad_prodlenie_stavka",
+ "last_run": "2026-10-16T20:33:05Z"
 }
