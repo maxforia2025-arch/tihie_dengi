@@ -275,8 +275,9 @@
   "mehanika_nalog_deti",
   "privychka_summa_pered_snom",
   "vklad_prodlenie_stavka",
-  "cel_data_summa"
+  "cel_data_summa",
+  "cel_bez_summy"
  ],
- "last_post_id": "cel_data_summa",
- "last_run": "2026-10-17T08:57:06Z"
+ "last_post_id": "cel_bez_summy",
+ "last_run": "2026-10-17T13:59:53Z"
 }
