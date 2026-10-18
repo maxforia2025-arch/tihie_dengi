@@ -277,8 +277,9 @@
   "vklad_prodlenie_stavka",
   "cel_data_summa",
   "cel_bez_summy",
-  "zarplata_ne_ravno_dohod"
+  "zarplata_ne_ravno_dohod",
+  "raschet_remont_v_cene"
  ],
- "last_post_id": "zarplata_ne_ravno_dohod",
- "last_run": "2026-10-17T20:11:21Z"
+ "last_post_id": "raschet_remont_v_cene",
+ "last_run": "2026-10-18T09:16:16Z"
 }
