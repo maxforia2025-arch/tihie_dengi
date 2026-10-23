@@ -292,8 +292,9 @@
   "platit_za_uvedomleniya",
   "ostatok_v_konce_dnya",
   "vtoroe_reshenie_utrom",
-  "mehanika_okruglenie"
+  "mehanika_okruglenie",
+  "nds_vklad_dolgosrok"
  ],
- "last_post_id": "mehanika_okruglenie",
- "last_run": "2026-10-22T21:13:46Z"
+ "last_post_id": "nds_vklad_dolgosrok",
+ "last_run": "2026-10-23T09:41:55Z"
 }
