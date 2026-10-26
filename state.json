@@ -302,8 +302,9 @@
   "raschet_dostavka_kredit",
   "privychka_pauza_pered_rasprodazhei",
   "vklad_na_rebenka",
-  "mif_investicii_slozhno"
+  "mif_investicii_slozhno",
+  "raschet_podpiski_god"
  ],
- "last_post_id": "mif_investicii_slozhno",
- "last_run": "2026-10-26T10:41:19Z"
+ "last_post_id": "raschet_podpiski_god",
+ "last_run": "2026-10-26T17:04:09Z"
 }
