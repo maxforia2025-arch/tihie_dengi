@@ -306,8 +306,9 @@
   "raschet_podpiski_god",
   "raschet_komissiya_perevod",
   "mif_bogatie_ne_schitayut",
-  "antimif_bogatye_dorogo"
+  "antimif_bogatye_dorogo",
+  "raschet_podushki_v_mesyatsah"
  ],
- "last_post_id": "antimif_bogatye_dorogo",
- "last_run": "2026-10-27T16:07:06Z"
+ "last_post_id": "raschet_podushki_v_mesyatsah",
+ "last_run": "2026-10-27T21:51:04Z"
 }
