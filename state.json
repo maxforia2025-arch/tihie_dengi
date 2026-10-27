@@ -305,8 +305,9 @@
   "mif_investicii_slozhno",
   "raschet_podpiski_god",
   "raschet_komissiya_perevod",
-  "mif_bogatie_ne_schitayut"
+  "mif_bogatie_ne_schitayut",
+  "antimif_bogatye_dorogo"
  ],
- "last_post_id": "mif_bogatie_ne_schitayut",
- "last_run": "2026-10-27T10:09:12Z"
+ "last_post_id": "antimif_bogatye_dorogo",
+ "last_run": "2026-10-27T16:07:06Z"
 }
