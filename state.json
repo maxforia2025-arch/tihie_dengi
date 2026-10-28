@@ -307,8 +307,9 @@
   "raschet_komissiya_perevod",
   "mif_bogatie_ne_schitayut",
   "antimif_bogatye_dorogo",
-  "raschet_podushki_v_mesyatsah"
+  "raschet_podushki_v_mesyatsah",
+  "antimif_slozhno_investirovat"
  ],
- "last_post_id": "raschet_podushki_v_mesyatsah",
- "last_run": "2026-10-27T21:51:04Z"
+ "last_post_id": "antimif_slozhno_investirovat",
+ "last_run": "2026-10-28T10:55:38Z"
 }
