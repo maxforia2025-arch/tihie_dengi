@@ -311,8 +311,9 @@
   "antimif_slozhno_investirovat",
   "mehanika_schet_dlya_naloga",
   "privychka_pauza_pered_pokupkoy",
-  "antimif_kredit_normalno"
+  "antimif_kredit_normalno",
+  "vklad_procenty_v_konce_sroka"
  ],
- "last_post_id": "antimif_kredit_normalno",
- "last_run": "2026-10-29T11:12:59Z"
+ "last_post_id": "vklad_procenty_v_konce_sroka",
+ "last_run": "2026-10-29T17:12:33Z"
 }
