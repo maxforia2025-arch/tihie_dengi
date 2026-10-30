@@ -314,8 +314,9 @@
   "antimif_kredit_normalno",
   "vklad_procenty_v_konce_sroka",
   "privychka_sverit_podpiski",
-  "mehanika_vklad_procent_na_ostatok"
+  "mehanika_vklad_procent_na_ostatok",
+  "mehanika_zarplata_dva_scheta"
  ],
- "last_post_id": "mehanika_vklad_procent_na_ostatok",
- "last_run": "2026-10-30T11:07:42Z"
+ "last_post_id": "mehanika_zarplata_dva_scheta",
+ "last_run": "2026-10-30T16:53:10Z"
 }
