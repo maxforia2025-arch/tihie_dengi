@@ -315,8 +315,9 @@
   "vklad_procenty_v_konce_sroka",
   "privychka_sverit_podpiski",
   "mehanika_vklad_procent_na_ostatok",
-  "mehanika_zarplata_dva_scheta"
+  "mehanika_zarplata_dva_scheta",
+  "raspiska_pri_zaeme_drugu"
  ],
- "last_post_id": "mehanika_zarplata_dva_scheta",
- "last_run": "2026-10-30T16:53:10Z"
+ "last_post_id": "raspiska_pri_zaeme_drugu",
+ "last_run": "2026-10-30T21:57:57Z"
 }
