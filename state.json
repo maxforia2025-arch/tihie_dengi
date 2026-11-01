@@ -319,8 +319,9 @@
   "raspiska_pri_zaeme_drugu",
   "prosrochka_kartina",
   "raschet_ceny_podpisok_god",
-  "nalog_s_prodazhi_ve_onlain"
+  "nalog_s_prodazhi_ve_onlain",
+  "nakopitelnyi_vs_vklad_gibkost"
  ],
- "last_post_id": "nalog_s_prodazhi_ve_onlain",
- "last_run": "2026-10-31T21:01:38Z"
+ "last_post_id": "nakopitelnyi_vs_vklad_gibkost",
+ "last_run": "2026-11-01T11:36:21Z"
 }
