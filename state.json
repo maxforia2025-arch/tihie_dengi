@@ -328,8 +328,9 @@
   "vklad_popolnenie_ne_menyaet_stavku",
   "raschet_pravilo_72",
   "snyat_na_bez_srochnosti",
-  "mehanika_nakop_scheta_avto"
+  "mehanika_nakop_scheta_avto",
+  "raschet_stoimosti_chasa"
  ],
- "last_post_id": "mehanika_nakop_scheta_avto",
- "last_run": "2026-11-03T22:56:27Z"
+ "last_post_id": "raschet_stoimosti_chasa",
+ "last_run": "2026-11-04T12:42:52Z"
 }
