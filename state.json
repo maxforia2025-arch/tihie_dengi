@@ -343,8 +343,9 @@
   "slozhnyj_procent_vremya",
   "vklad_procenty_nalog",
   "inflyaciya_est_dengi",
-  "summa_ot_dohoda"
+  "summa_ot_dohoda",
+  "probnyy_mesyats"
  ],
- "last_post_id": "summa_ot_dohoda",
- "last_run": "2026-11-08T21:43:02Z"
+ "last_post_id": "probnyy_mesyats",
+ "last_run": "2026-11-09T13:30:55Z"
 }
