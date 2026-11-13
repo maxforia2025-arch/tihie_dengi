@@ -357,8 +357,9 @@
   "vklad_do_vostrebovaniya",
   "privychka_08",
   "srednyaya_zarplata_lozh",
-  "strahovanie_vkladov_limit"
+  "strahovanie_vkladov_limit",
+  "stavka_po_kreditu_polnaya"
  ],
- "last_post_id": "strahovanie_vkladov_limit",
- "last_run": "2026-11-13T18:17:47Z"
+ "last_post_id": "stavka_po_kreditu_polnaya",
+ "last_run": "2026-11-13T23:16:40Z"
 }
