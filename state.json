@@ -366,8 +366,9 @@
   "rasprodazha_sozdana_dlya_traty",
   "nalogovyj_vychet",
   "kredit_karta_snyat_nalichnye",
-  "scheta_v_odnom_banke"
+  "scheta_v_odnom_banke",
+  "perevod_v_den_zarplaty"
  ],
- "last_post_id": "scheta_v_odnom_banke",
- "last_run": "2026-11-16T20:44:50Z"
+ "last_post_id": "perevod_v_den_zarplaty",
+ "last_run": "2026-11-17T01:37:26Z"
 }
