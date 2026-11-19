@@ -374,8 +374,9 @@
   "okruglenie_dohoda_vniz",
   "dva_dohoda_v_seme",
   "tri_zarplaty_pered_uvolneniem",
-  "raschet_komissiya_obmena"
+  "raschet_komissiya_obmena",
+  "privychka_dat_zarplaty"
  ],
- "last_post_id": "raschet_komissiya_obmena",
- "last_run": "2026-11-19T14:03:06Z"
+ "last_post_id": "privychka_dat_zarplaty",
+ "last_run": "2026-11-19T19:16:02Z"
 }
