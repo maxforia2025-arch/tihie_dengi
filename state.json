@@ -378,8 +378,9 @@
   "privychka_dat_zarplaty",
   "komissiya_szhiraet",
   "melkie_traty_summa",
-  "besplatnyj_syr"
+  "besplatnyj_syr",
+  "k_ne_skidka"
  ],
- "last_post_id": "besplatnyj_syr",
- "last_run": "2026-11-20T18:55:04Z"
+ "last_post_id": "k_ne_skidka",
+ "last_run": "2026-11-20T23:42:27Z"
 }
