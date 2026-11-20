@@ -377,8 +377,9 @@
   "raschet_komissiya_obmena",
   "privychka_dat_zarplaty",
   "komissiya_szhiraet",
-  "melkie_traty_summa"
+  "melkie_traty_summa",
+  "besplatnyj_syr"
  ],
- "last_post_id": "melkie_traty_summa",
- "last_run": "2026-11-20T13:46:06Z"
+ "last_post_id": "besplatnyj_syr",
+ "last_run": "2026-11-20T18:55:04Z"
 }
